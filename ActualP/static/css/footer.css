@@ -1,0 +1,55 @@
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-footer {
+    background-color:#708090;
+    color:white;
+}
+
+#company {
+    position: relative;
+    left:380px;
+}
+
+#products {
+    position:relative;
+    left:150px;
+    bottom:30px;
+}
+
+#aboutus {
+    position:relative;
+    left:50px;
+}
+
+.white {
+    color:white;
+}
+
+#social {
+    position: relative;
+    right:270px;
+    top:240px;
+}
+
+.fa-facebook {
+    font-size:30px;
+    color: white;
+}
+
+.fa-twitter {
+    font-size:30px;
+    color: white;
+}
+
+.fa-instagram {
+    font-size:30px;
+    color: white;
+}
+
+
+.fa-linkedin {
+    font-size:30px;
+    color: white;
+}

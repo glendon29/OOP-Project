@@ -1,0 +1,62 @@
+{% extends 'bloglayout.html' %}
+{% block body %}
+<img src="static/images/nature-2605011_1920.jpg" alt="community">
+ <br><br> <br><br>
+<div class="container-fluid text-center">
+  <h2>Select your insurance product to find related communities</h2>
+
+  <br>
+  <div class="row">
+    <div class="col-sm-4" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <img src="static/images/car.jpg" class="smallpic">
+      <h4>AUTO </h4>
+    </div>
+    <div class="col-sm-4" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <img src="static/images/maldives-1993704_1920.jpg" class="smallpic">
+      <h4>TRAVEL</h4>
+    </div>
+    <div class="col-sm-4" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <a href="/lifeinsurance">
+      <img src="static/images/couple.jpg" class="smallpic" >
+      </a>
+      <h4>LIFE</h4>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <a href="">
+        <img src="static/images/health.jpg" class="smallpic">
+      </a>
+      <h4>HEALTH</h4>
+
+    </div>
+    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <a href="">
+        <img src="static/images/home.jpg" class="smallpic">
+      </a>
+      <h4>HOME</h4>
+
+    </div>
+    <div class="col-sm-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <a href="">
+        <img src="static/images/retire.jpg" class="smallpic">
+      </a>
+      <h4 style="color:#303030;">RETIREMENT</h4>
+
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<div class="tutorial" >
+  <article>
+    <h3></h3>
+  </article>
+</div>
+    <script>
+  $(document).ready(function(){
+	AOS.init({ disable: 'mobile' });
+});
+</script>
+{% endblock %}

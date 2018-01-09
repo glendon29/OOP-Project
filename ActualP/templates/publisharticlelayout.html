@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/publisharticle.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+{%  block additionalscripts %}{% endblock %}
+
+<div class="container-fluid">
+    {% include 'includes/_navbar.html' %}
+    {% block body %}{% endblock %}
+</div>
+
+
+{% include 'includes/_footer.html' %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends 'blog_content_layout.html.html' %}
+{% block body %}
+<img src="babyadult.jpg" alt="Life" style="opacity: 0.7">
+  <h1>Life Insurance</h1>
+<main>
+ <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        {% for content in contents %}
+          <div class="post-preview">
+            <a href="{{ url_for('post', post_id=post.id) }}">
+              <h2 class="post-title">
+                {{ content.get_title() }}
+              </h2>
+              <h3 class="post-subtitle">
+                {{ content.get_subtitle() }}
+              </h3>
+            </a>
+            <p class="post-meta">Posted by {{ content.get_author() }} </p>
+          </div>
+          {% endfor %}
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+</main>
+<div id="thoughts">
+    <h2 CLASS="thoughtstitle" >Have any thoughts to share ?</h2>
+    <br><br>
+    <a href="upload_content.html"><button id="sharethoughts" >CLICK HERE !</button></a>
+</div>
+{% endblock %}

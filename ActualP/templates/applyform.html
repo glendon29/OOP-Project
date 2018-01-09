@@ -1,0 +1,216 @@
+{% extends 'applyformlayout.html' %}
+{% block body %}
+<br>
+<br>
+<br>
+<form class="form-inline" method="get">
+<fieldset>
+<legend>&nbsp &nbsp &nbsp &nbsp Personal Particulars</legend>
+ <div class="form-group">
+<label for="name">Enter Full Name:</label>
+<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required autofocus/>
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="age">Enter Age:</label>
+<input type="number" class="form-control" id="age" name="age" placeholder="Your Age" required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="email">Email Address:</label>
+<input type="email" class="form-control" id="email1" name="email" size="40" placeholder="Email" required />
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="dob">Enter Date of Birth:</label>
+<input type="text" class="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY" required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="cob">Enter Country of Birth:</label>
+<input type="text" class="form-control" id="cob" name="cob" placeholder="Country of Birth" required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="nation">Nationality:</label>
+<input type="text" class="form-control" id="nation" name="nation" placeholder="Nationality" required />
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="icnum">Enter IC Number:</label>
+<input type="text" class="form-control" id="icnum" name="icnum" placeholder="IC Number" required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="handphone">Handphone No:</label>
+<input type="text" class="form-control" id="handphone" name="handphone" placeholder="Hp No." required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="home">Home Tel No:</label>
+<input type="text" class="form-control" id="home" name="home" placeholder="Home No."/>
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="income">Enter Your Income:</label>
+<input type="text" class="form-control" id="income" name="income" placeholder="Gross Income" required />
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="companyname">Company Name:</label>
+<input type="text" class="form-control" id="companyname" name="companyname" placeholder="Company" required />
+</div>
+&nbsp
+ <div class="form-group">
+<label for="companycontact">Office Tel No:</label>
+<input type="companycontact" class="form-control" id="companycontact" name="companycontact" placeholder="Office No."/>
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="maritalstatus">Marital Status:</label>
+<select id="status" class="form-control" required>
+<option value="Single">Single</option>
+<option value="Married">Married</option>
+<option value="Partner">Partner</option>
+<option value="Divorced">Divorced</option>
+<option value="Widowed">Widowed</option>
+</select>
+</div>
+&nbsp
+&nbsp
+<label for="gender">Gender:</label>
+<input id="gender1" type="radio" name="gender" value="Male"/> Male
+&nbsp
+<input id="gender2" type="radio" name="gender" value="Female"/> Female
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend>&nbsp &nbsp &nbsp &nbsp Address</legend>
+ <div class="form-group">
+<label for="blk">Block:</label>
+<input type="text" class="form-control" id="blk" name="blk" size="4" placeholder="Blk" required />
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="street">Street:</label>
+<input type="text" class="form-control" id="street" name="street" size="30" placeholder="Street" required />
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="hseno">House No:</label>
+<input type="text" class="form-control" id="hseno" name="hseno" size="8" placeholder="House No." required />
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="postcode">Postal code:</label>
+<input type="text" class="form-control" id="postcode" name="postcode" size="15" placeholder="Postal Code" required />
+</div>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend>&nbsp &nbsp &nbsp &nbsp Insurance</legend>
+ <div class="form-group">
+<label for="company">Insurance Company:</label>
+<select id="insurancecompany" class="form-control" required>
+<option value="AXA">AXA</option>
+<option value="NTUC Income">NTUC Income</option>
+<option value="AIA">AIA</option>
+<option value="Prudential">Prudential</option>
+<option value="Great Eastern">Great Eastern</option>
+</select>
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="planname">Plan Name:</label>
+<input type="text" class="form-control" id="planname" name="planname" placeholder="Plan Type" required />
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="illness">Are you currently on long-term medication?</label>
+<input type="radio" id="medication1" name="medication" value="Yes"/> Yes
+&nbsp
+<input type="radio" id="medication2" name="medication" value="No"/> No
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="ifyes">If yes, please indicate the medication:</label>
+<input type="text" class="form-control" id="ifyesmedication" name="ifyesmedication"/>
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="sick">Are you currently having any illness? Or used to have a illness?</label>
+<input id="illness1" type="radio" name="illness" value="Yes"/> Yes
+&nbsp
+<input id="illness2" type="radio" name="illness" value="No"/> No
+</div>
+&nbsp
+&nbsp
+ <div class="form-group">
+<label for="ifyes">If yes, please indicate the illness:</label>
+<input type="text" class="form-control" id="ifyesillness" name="ifyesillness"/>
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="bankrupt">Have you declare bankrupt before?</label>
+<input id="bankrupt1" type="radio" name="bankrupt" value="Yes"/> Yes
+&nbsp
+<input id="bankrupt2" type="radio" name="bankrupt" value="No"/> No
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="hospitalize">Have hospitalized before?</label>
+<input id="hospitalize1" type="radio" name="hospitalize" value="Yes"/> Yes
+&nbsp
+<input id="hospitalize2" type="radio" name="hospitalize" value="No"/> No
+</div>
+<br>
+<br>
+ <div class="form-group">
+<label for="hospitalize">Are you currently a smoker or used to smoke in the past?</label>
+<input id="smoker1" type="radio" name="smoke" value="Yes"/> Yes
+&nbsp
+<input id="smoker2" type="radio" name="smoke" value="No"/> No
+</div>
+<br>
+<br>
+<strong>&nbsp &nbsp &nbsp &nbsp &nbsp Upload your medical records (if any):</strong>
+<input type="file" name="fileToUpload" id="fileToUpload">
+<br>
+<br>
+ <div class="form-group">
+<textarea id="textarea" class="form-control" cols="60" placeholder="Any other medical records?"></textarea>
+<br>
+<br>
+</div>
+</fieldset>
+<div class="form-group">
+<input class="btn btn-success" type="submit" value="Submit" onclick="saving()"/>
+&nbsp
+<input class="btn btn-primary" type="reset" value="Reset"/>
+</div>
+<br>
+<br>
+</form>
+{% endblock %}

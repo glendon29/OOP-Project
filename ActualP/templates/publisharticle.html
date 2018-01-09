@@ -1,0 +1,24 @@
+{% extends 'publisharticlelayout.html' %}
+{% block body %}
+        <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Blog Uploaded</h2>
+  <p>Click to view post
+  </p>
+    <a href="After_publish.html"><button id="view" >CLICK HERE !</button></a>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+{% endblock %}
